@@ -1,0 +1,86 @@
+﻿/* ================= MEDIA SCREEN ================= */
+/* ================= Large Devices (Desktop) ================= */
+@media (min-width: 992px){
+	.logo-mobile{
+		display:none;
+	}
+}
+
+@media (min-width: 768px){
+	.onlyMobile{
+		display:none;
+	}
+}
+
+/* ================= Medium & Small Devices (Mobile) ================= */
+@media (max-width: 991.98px) {	
+	.container-fluid, .mobile-offcanvas {
+        overflow-x: hidden;
+    }
+	
+	.mobile-offcanvas {
+        visibility: hidden;
+        transform: translateX(-100%);
+        border-radius: 0;
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: var(--white);
+        height: 100%;
+        z-index: 10;
+        width: 80%;
+        box-shadow: 5px 0 15px rgba(0, 0, 0, 0.7);
+        overflow-y: scroll;
+        transition: visibility 0.3s ease-in-out, transform 0.3s ease-in-out;
+    }
+	
+    .mobile-offcanvas.show {
+        visibility: visible;
+        transform: translateX(0);
+    }
+	
+    #btn-menu {
+        margin-top: 0 !important;
+        margin-right: 7px;
+        position: relative;
+        z-index: 4;
+        background: 0 0;
+        border: none;
+        transition: 0.2s;
+        float: right;
+        margin-left: 20px;
+    }
+	
+    #btn-menu span {
+        width: 27px;
+        height: 2px;
+        margin-bottom: 9px;
+        background-color: var(--blue);
+        display: block;
+    }
+	
+	.logo-mobile img {
+        max-width: 45px;
+    }
+	
+    .sticky {
+        padding: 12px 15px !important;
+        background: var(--dark);
+        border-bottom: 0;
+    }
+	
+    .sticky #btn-menu span {
+        background: var(--blue);
+    }
+	
+    #navbar_main {
+        background: var(--dark);
+    }
+}
+
+@media (max-width: 767.98px) {
+	.onlyPC{
+		display:none;
+	}
+}
