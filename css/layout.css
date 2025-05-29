@@ -36,6 +36,7 @@
     --gradient_2: linear-gradient(to bottom, #ffffff 0%, #dddddd 50%, #9e9e9e 100%);
 	--gradient_3: linear-gradient(to left, #00ffc3 0%, rgba(255,255,255,0) 100%);
 	--d_gradient: linear-gradient(to bottom, #191919 0%, #171719 50%, #151515 100%);
+	--gradient_d: linear-gradient(to bottom, #1f1f1f 0%, #1e1e1e 50%, #191919 100%);
 	
 	--font-fallback: Roboto, Arial, -apple-system, BlinkMacSystemFont,
                    "Segoe UI", "Helvetica Neue", "Noto Sans", sans-serif,
@@ -252,7 +253,7 @@ p{
 }
 
 #solution ul li{
-	margin-bottom:20px;
+	margin-bottom:25px;
 	float:left;
 	width:50%;
 	font-size:24px;
@@ -261,11 +262,12 @@ p{
 }
 
 #solution ul li img{
-	width:28px;
-	height:28px;
-	border:1px solid var(--text);
+	width:46px;
+	height:46px;
+	border:1px solid var(--border);
 	border-radius:6px;
 	margin-right:10px;
+	padding:8px;
 }
 
 .title-group{
@@ -321,16 +323,17 @@ p{
 }
 
 .box-img{
-	border:1px solid var(--text);
-	border-radius:8px;
+	background:var(--gradient);
+	border:5px solid var(--dark);
+	border-radius:10px;
 	padding:10px;
-	width:46px;
-	height:46px;
+	width:64px;
+	height:64px;
 	margin-bottom:20px;
 }
 
 .box-img img{
-	
+	border-radius:10px;
 }
 
 #customer h2{
@@ -350,6 +353,10 @@ p{
 	background:var(--gradient) !important;
 	-webkit-background-clip: text !important;
 	-webkit-text-fill-color: transparent !important;
+}
+
+.bg-gradient-dark{
+	background:var(--gradient_d) !important;
 }
 
 #promotion{
