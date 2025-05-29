@@ -65,11 +65,18 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     // Đóng offcanvas khi click vào từng nav-link trên mobile
-    document.querySelectorAll('#navbar_main .nav-link').forEach(function(link) {
-        link.addEventListener('click', function() {
-            if (window.innerWidth <= 991.98) {
-                close_offcanvas();
-            }
-        });
-    });
+	document.querySelectorAll('#navbar_main .nav-link').forEach(function(link) {
+		link.addEventListener('click', function() {
+			// 1. Cập nhật .active
+			document.querySelectorAll('#navbar_main .nav-item').forEach(function(item) {
+				item.classList.remove('active');
+			});
+			this.closest('.nav-item').classList.add('active');
+
+			// 2. Đóng offcanvas nếu trên mobile
+			if (window.innerWidth <= 991.98) {
+				close_offcanvas();
+			}
+		});
+	});
 });
