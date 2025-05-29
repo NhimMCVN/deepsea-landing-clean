@@ -76,7 +76,7 @@ b, strong{
 body{
 	background:var(--dark);
     font-family: var(--font);
-    font-size:16px;
+    font-size:18px;
 	color:var(--text);
 }
 
@@ -172,7 +172,7 @@ p{
 	background:var(--gradient_2);
 	font-family:var(--font_m);
 	font-size:34px;
-	margin:7px 0;
+	margin:7px 0 15px;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -183,7 +183,7 @@ p{
 }
 
 #highlight-top h6{
-	margin:10px 0 20px;
+	margin:20px 0 30px;
 	font-size:28px;
 	color:var(--white);
 }
@@ -193,12 +193,13 @@ p{
 }
 
 .button{
-	padding:10px 20px;
+	padding:13px 25px;
 	border-radius:8px;
 	border:1px solid transparent;
-	font-family:var(--font_m);
+	font-family:var(--font_b);
 	font-size:18px;
 	margin-right:10px;
+	transition:all 0.25s ease;
 }
 
 .button:hover{
@@ -222,6 +223,11 @@ p{
 	height:5px;
 	background:var(--gradient_3);
 	margin-bottom:15px;
+}
+
+.group-button button{
+	width:200px;
+	padding:13px 10px;
 }
 
 #solution h2{
@@ -248,7 +254,9 @@ p{
 	margin-bottom:20px;
 	float:left;
 	width:50%;
-	font-size:20px;
+	font-size:24px;
+	color:var(--white);
+	font-family:var(--font_m);
 }
 
 #solution ul li img{
@@ -257,6 +265,10 @@ p{
 	border:1px solid var(--text);
 	border-radius:6px;
 	margin-right:10px;
+}
+
+.title-group{
+	margin-bottom:35px;
 }
 
 .title-group h6{
@@ -269,6 +281,12 @@ p{
 
 .title-group h6 img{
 	width:42px;
+}
+
+.title-group h5{
+	margin-top:10px;
+	line-height:1.5;
+	font-size:21px;
 }
 
 .title-group h2{
@@ -285,10 +303,16 @@ p{
 	padding:30px;
 	border-radius:10px;
 	border:1px solid var(--border);
+	margin-bottom:20px;
 }
 
 .item-box h5{
-	
+	margin-bottom:10px;
+	font-size:21px;
+	font-family:var(--font_b);
+	background:var(--gradient);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 .item-box p{
@@ -299,16 +323,50 @@ p{
 	border:1px solid var(--text);
 	border-radius:8px;
 	padding:10px;
-	width:34px;
-	height:34px;
+	width:46px;
+	height:46px;
+	margin-bottom:20px;
 }
 
 .box-img img{
 	
 }
 
-/* ======================== FOOTER ======================== */
+#customer h2{
+	background:var(--gradient);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
 
+#customer h2 b{
+	display:block;
+	background:var(--gradient_2);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.txt-gradient{
+	background:var(--gradient) !important;
+	-webkit-background-clip: text !important;
+	-webkit-text-fill-color: transparent !important;
+}
+
+#promotion{
+	text-align:center;
+}
+
+/* ======================== FOOTER ======================== */
+footer{
+	padding:40px 0 30px;
+}
+
+.list-navigation{
+	padding-left:0;
+}
+
+.copyright b{
+	color:var(--green);
+}
 
 /* ======================== Few Option ======================== */
 #clickToTop {
@@ -322,6 +380,7 @@ p{
     cursor: pointer;
     padding: 12px;
     border-radius: 50%;
+	background:var(--gradient);
 }
 
 #clickToTop:after {
@@ -329,13 +388,12 @@ p{
     top: -27px;
     left: 10px;
     content: "Top";
-    color: var(--blue);
-    font-family: var(--font_m);
+    color: var(--white);
+    font-family: var(--font_b);
 }
 
 #clickToTop img {
-    width: 26px;
-    height: 21px;
-    filter: brightness(0) invert(1);
+    width: 24px;
+    height: 20px;
     transform: rotate(-90deg);
 }
