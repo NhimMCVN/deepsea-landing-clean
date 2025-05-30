@@ -23,7 +23,7 @@
     --text      : #c8c8c8;
     --title     : #3f434c;
     --border    : #323232;
-	--dark		: #0a080d;
+	--dark		: #000008;
 	--shadow	: 0 4px 26px #256f5d;
     
 	--black		: #000000;
@@ -79,6 +79,7 @@ body{
     font-family: var(--font);
     font-size:18px;
 	color:var(--text);
+	overflow-x:hidden;
 }
 
 p{
@@ -117,7 +118,7 @@ p{
     width: 100%;
     position: fixed !important;
     top: 0;
-	z-index:2;
+	z-index:8;
     background:rgba(3, 22, 36, 0.9);
 }
 
@@ -161,10 +162,13 @@ p{
 }
 
 /* ======================== MAIN ======================== */
+.bg-deepsea{
+	background:url(../images/deepsea.jpg) no-repeat center top;
+	background-size:100%;
+}
+
 #highlight-top{
 	margin-top:-70px;
-	background:url(../images/ocean.jpg) no-repeat center top;
-	background-size:100%;
 	padding:250px 0 120px;
 }
 
@@ -238,6 +242,10 @@ p{
 	padding:13px 10px;
 }
 
+#solution{
+	padding-bottom:80px;
+}
+
 #solution h2{
 	font-size:64px;
 	background:var(--gradient);
@@ -276,9 +284,45 @@ p{
 	padding:8px;
 }
 
+#product{
+	background:url('../images/whale.png') no-repeat right top;
+	background-size:400px;
+}
+
 #product .title-group{
 	margin-top:60px;
 }
+
+#product .container, #faqs .container, #roadmap .container{
+	position:relative;
+	z-index:2;
+}
+
+#product .container:after, #faqs .container:after,
+#roadmap .container:after{
+	background:url('../images/sound.png') no-repeat;
+	position:absolute;
+	top:20%;
+	left:-20%;
+	content:'';
+	width:320px;
+	height:271px;
+	z-index:-1;
+	opacity:0.3;
+}
+
+#roadmap .container:after{
+	background:url('../images/whale-2.jpg') no-repeat;
+	width:450px;
+	height:348px;
+	opacity:0.8;
+}
+
+ #faqs .container:after{
+	left:auto;
+	right:-15%;
+	top:10%;
+ }
 
 .title-group{
 	margin-bottom:35px;
@@ -312,7 +356,7 @@ p{
 }
 
 .item-box{
-	box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.3);
+	box-shadow: inset 0 5px 20px rgba(0, 0, 0, 0.6);
 	background:var(--d_gradient);
 	border-radius:10px;
 	border:1px solid var(--border);
@@ -322,7 +366,12 @@ p{
 
 .bg-shadow{
 	padding:30px;
-	background:url('../images/shadow.png') no-repeat bottom right;
+	background:	url('../images/shadow.png') no-repeat bottom right,
+				url('../images/border.png') no-repeat top right;
+}
+
+.bg-border{
+	background: url('../images/border.png') no-repeat top right;
 }
 
 .pd-30{
@@ -350,6 +399,11 @@ p{
 	width:64px;
 	height:64px;
 	margin-bottom:20px;
+}
+
+#tokenomic{
+	background:url('../images/bg-whale.jpg') no-repeat center center;
+	background-size:1100px;
 }
 
 #tokenomic h2{
@@ -424,6 +478,11 @@ p{
 	font-size:16px;
 	font-family:var(--font_m);
 	color:var(--green);
+}
+
+#roadmap{
+	background:url('../images/roadmap.jpg') no-repeat bottom right;
+	background-size:700px;
 }
 
 #roadmap article h5{
@@ -503,13 +562,21 @@ p{
 	filter:brightness(100%);
 }
 
+.accordion-button:not(.collapsed){
+	box-shadow:none;
+}
+
 #join-us{
 	background:url('../images/background2.jpg') no-repeat center bottom;
 	background-size:100%;
 }
 
+#join-us .title-group h5{
+	color:var(--white);
+}
+
 .bg-gradient{
-	background: linear-gradient(to top,rgba(255, 255, 255, 0) 0%, #0a080d 100%) !important;
+	background: linear-gradient(to top,rgba(255, 255, 255, 0) 0%, var(--dark) 100%) !important;
 }
 
 /* ======================== FOOTER ======================== */

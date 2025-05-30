@@ -4,6 +4,10 @@
 	.logo-mobile{
 		display:none;
 	}
+	
+	#solution article{
+		padding-left:30px;
+	}
 }
 
 @media (min-width: 768px){
@@ -121,8 +125,26 @@
 }
 
 @media (max-width: 767.98px) {
+	.bg-deepsea{
+		background-position: right top;
+		background-size: 200%;
+	}
+	
+	#highlight-top{
+		padding-top:300px;
+		padding-bottom:65px;
+	}
+	
 	#highlight-top article h1{
-		font-size:45px;
+		font-size:42px;
+	}
+	
+	#product{
+		background-size:270px;
+	}
+	
+	#join-us{
+		background-size:cover;
 	}
 	
 	.button{
