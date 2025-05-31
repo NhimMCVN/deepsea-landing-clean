@@ -23,7 +23,7 @@
     --text      : #c8c8c8;
     --title     : #3f434c;
     --border    : #323232;
-	--dark		: #000614;
+	--dark		: #08112e;
 	--shadow	: 0 4px 26px #256f5d;
     
 	--black		: #000000;
@@ -35,7 +35,7 @@
 	--gradient  : linear-gradient(to bottom, #00ffc3 0%, #0ee4ae 50%, #189075 100%);
     --gradient_2: linear-gradient(to bottom, #ffffff 0%, #dddddd 50%, #9e9e9e 100%);
 	--gradient_3: linear-gradient(to left, #00ffc3 0%, rgba(255,255,255,0) 100%);
-	--d_gradient: linear-gradient(to bottom, #24312f 0%, #101010 100%);
+	--d_gradient: linear-gradient(to bottom, #0f263e 0%, #010615 100%);
 	--gradient_d: linear-gradient(to bottom, #32483c 0%, #1c1c1c 100%);
 	
 	--font-fallback: Roboto, Arial, -apple-system, BlinkMacSystemFont,
@@ -179,7 +179,7 @@ p{
 }
 
 .bg-deepsea{
-	background:url(../images/deepsea_4.jpg) no-repeat center top;
+	background:url(../images/deepsea_2.jpg) no-repeat center top;
 	background-size:100%;
 }
 

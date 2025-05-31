@@ -5,7 +5,7 @@
 		display:none;
 	}
 	
-	#solution article{
+	#launch article{
 		padding-left:30px;
 	}
 }
@@ -125,6 +125,39 @@
 }
 
 @media (max-width: 767.98px) {
+	#community .container::after{
+		height:540px;
+	}
+	
+	#countdown{
+		font-size:18px;
+	}
+	
+	.text-time-count{
+		display:block;
+	}
+	
+	#launch h2{
+		font-size:35px;
+	}
+	
+	.space_section{
+		padding:40px 0;
+	}
+	
+	#highlight-top ul li{
+		float:none;
+		width:100%;
+	}
+	
+	#highlight-top article h2{
+		font-size:25px;
+	}
+	
+	.item-community{
+		max-width:270px;
+	}
+	
 	.bg-deepsea{
 		background-position: right top;
 		background-size: 200%;
@@ -139,7 +172,7 @@
 		font-size:42px;
 	}
 	
-	#product{
+	#why-us{
 		background-size:270px;
 	}
 	
@@ -225,7 +258,7 @@
 		text-align:center;
 	}
 	
-	#product .title-group{
+	#why-us .title-group{
 		margin-top:0;
 	}
 }

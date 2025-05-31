@@ -80,3 +80,58 @@ document.addEventListener("DOMContentLoaded", function() {
 		});
 	});
 });
+
+/* **************** Countdown **************** */
+const targetDate = new Date("2025-08-01T23:59:59").getTime();
+const countdownElement = document.getElementById("countdown");
+const updateCountdown = () => {
+    const now = new Date().getTime();
+    const distance = targetDate - now;
+
+    if (distance <= 0) {
+      countdownElement.innerHTML = "⏰ End Time!";
+      clearInterval(interval);
+      return;
+    }
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance / (1000 * 60 * 60)) % 24);
+    const minutes = Math.floor((distance / (1000 * 60)) % 60);
+    const seconds = Math.floor((distance / 1000) % 60);
+
+    countdownElement.innerHTML =
+	`<span class="time-count">${days}</span> days <span class="time-count">${hours}</span> hours <span class="time-count">${minutes}</span> mins <span class="time-count">${seconds}</span> seconds`;
+};
+const interval = setInterval(updateCountdown, 1000);
+updateCountdown(); 
+
+/* **************** Scroll Horizontal **************** */
+const scrollable = document.getElementById('scrollable');
+let isDown = false;
+let startX;
+let scrollLeft;
+
+scrollable.addEventListener('mousedown', (e) => {
+    isDown = true;
+    scrollable.classList.add('active');
+    startX = e.pageX - scrollable.offsetLeft;
+    scrollLeft = scrollable.scrollLeft;
+});
+
+scrollable.addEventListener('mouseleave', () => {
+    isDown = false;
+    scrollable.classList.remove('active');
+});
+
+scrollable.addEventListener('mouseup', () => {
+    isDown = false;
+    scrollable.classList.remove('active');
+});
+
+scrollable.addEventListener('mousemove', (e) => {
+    if (!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - scrollable.offsetLeft;
+    const walk = (x - startX) * 1.5; // tốc độ kéo
+    scrollable.scrollLeft = scrollLeft - walk;
+});
