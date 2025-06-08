@@ -100,7 +100,7 @@ const updateCountdown = () => {
     const seconds = Math.floor((distance / 1000) % 60);
 
     countdownElement.innerHTML =
-	`<span class="time-count">${days}</span> days <span class="time-count">${hours}</span> hours <span class="time-count">${minutes}</span> mins <span class="time-count">${seconds}</span> seconds`;
+	`<span class="time-count"><small>${days}</small>days</span><span class="time-count"><small>${hours}</small>hours</span><span class="time-count"><small>${minutes}</small>mins</span><span class="time-count"><small>${seconds}</small>seconds</span>`;
 };
 const interval = setInterval(updateCountdown, 1000);
 updateCountdown(); 
