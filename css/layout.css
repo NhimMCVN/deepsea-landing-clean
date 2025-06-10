@@ -115,6 +115,11 @@ p{
     visibility: visible;
 }
 
+#header{
+	position:relative;
+	z-index:9;
+}
+
 .sticky {
     width: 100%;
     position: fixed !important;
@@ -203,8 +208,32 @@ p{
 }
 
 .bg-deepsea{
-	background: url(../images/rada.png) no-repeat left 50%, url(../images/deepsea.jpg) no-repeat center top;
-	background-size:333px, 100%;
+	background: url('../images/deepsea.jpg') no-repeat center top;
+	background-size:100%;
+	position:relative;
+}
+
+.bg-deepsea:after{
+	position:absolute;
+	content:'';
+	background:url('../images/rada.png') no-repeat;
+	width:500px;
+	height:500px;
+	left: -10%;
+  	top: 36%;
+	transform: translateY(-50%);
+	animation: spin 10s linear infinite;
+	z-index: 0;
+	opacity: 0.4;
+}
+
+@keyframes spin {
+	from {
+		transform: rotate(360deg);
+	}
+	to {
+		transform: rotate(0deg);
+	}
 }
 
 #highlight-top{
@@ -292,6 +321,18 @@ p{
 .group-button button{
 	width:220px;
 	padding:13px 10px;
+}
+
+.bg-group-img{
+	position:relative;
+}
+
+#only-whale{
+	position: absolute;
+	bottom: -25%;
+	left: -10%;
+	z-index: 1;
+	width: 500px;
 }
 
 #launch h2{
@@ -487,8 +528,8 @@ p{
 }
 
 #tokenomic{
-	background:url('../images/bg-whale.jpg') no-repeat center center;
-	background-size:1100px;
+	background:url('../images/bg-whale.jpg') no-repeat top right;
+	background-size:900px;
 }
 
 #tokenomic h2, #community h2{

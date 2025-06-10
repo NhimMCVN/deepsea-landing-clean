@@ -63,7 +63,7 @@
     #btn-menu span {
         width: 27px;
         height: 2px;
-        margin-bottom: 9px;
+        margin-bottom: 8px;
         background-color: var(--green);
         display: block;
     }
@@ -160,16 +160,47 @@
 	
 	.bg-deepsea{
 		background-position: right top;
-		background-size: 200%;
+		background-size: 180%;
 	}
 	
 	#highlight-top{
-		padding-top:300px;
-		padding-bottom:65px;
+		padding-top:240px;
+		padding-bottom:0;
 	}
 	
 	#highlight-top article h1{
-		font-size:42px;
+		font-size:32px;
+		margin-top:20px !important;
+	}
+
+	#highlight-top article h1 span{
+		font-size:53px;
+	}
+
+	.item-box p{
+		font-size:20px;
+		line-height:1.6;
+	}
+
+	#team{
+		padding-top:40px;
+	}
+
+	#tokenomic{
+		background-position:top left;
+	}
+
+	#roadmap{
+		background-position:bottom left;
+	}
+
+	.bg-deepsea::after{
+		left: 65%;
+  		top: 15%;
+	}
+
+	.border-gradient{
+		margin-bottom:10px !important;
 	}
 	
 	#why-us{
@@ -206,6 +237,7 @@
 		position:relative;
 		font-size:18px;
 		margin:0;
+		padding:12px 10px;
 	}
 	
 	#team article .border-gradient{
@@ -213,7 +245,11 @@
 	}
 	
 	#team article h5 small{
-		font-size:16px;
+		font-size:14px;
+	}
+
+	#tokenomic h2{
+		font-size:52px;
 	}
 	
 	#roadmap .mt-5{
@@ -245,6 +281,11 @@
 	
 	#faqs .title-group h5 br, .list-navigation{
 		display:none;
+	}
+
+	#only-whale{
+		width: 250px;
+    	z-index: 0;
 	}
 	
 	.accordion .accordion-button span, .accordion .accordion-button{
