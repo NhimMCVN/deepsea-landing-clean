@@ -132,6 +132,6 @@ scrollable.addEventListener('mousemove', (e) => {
     if (!isDown) return;
     e.preventDefault();
     const x = e.pageX - scrollable.offsetLeft;
-    const walk = (x - startX) * 1.5; // tốc độ kéo
+    const walk = (x - startX) * 1.2; // tốc độ kéo
     scrollable.scrollLeft = scrollLeft - walk;
 });
