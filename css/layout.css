@@ -242,11 +242,13 @@ p{
 }
 
 #highlight-top article h1{
-	font-size:52px;
+	font-size:58px;
 	line-height:1;
-	background:var(--gradient_2);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+	color:white;
+}
+
+#highlight-top article h1 b{
+	color:yellow;
 }
 
 #highlight-top article h1 span{
@@ -378,8 +380,8 @@ p{
 
 #launch ul li img,
 #highlight-top ul li img{
-	width:48px;
-	height:48px;
+	width:56px;
+	height:56px;
 	border:1px solid var(--border);
 	border-radius:6px;
 	margin-right:15px;
@@ -392,7 +394,13 @@ p{
 
 #highlight-top ul li span{
 	font-size:28px;
-	color:var(--green);
+	color:var(--white);
+}
+
+#highlight-top ul li span b{
+	color:yellow;
+	font-size:38px;
+	text-decoration:underline;
 }
 
 .hr-gradient, .hr-gradient-center{
