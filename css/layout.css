@@ -497,6 +497,7 @@ p{
 	background:	url('../images/border.png') no-repeat top right,
 				var(--gradient_4);
 	box-shadow: inset 0 5px 27px rgba(0, 0, 0, 0.8);
+	height: 100%;
 }
 
 .bg-border{
@@ -620,6 +621,7 @@ p{
 #roadmap .title-group h5{
 	font-size:36px;
 	margin-bottom:0;
+	color: white;
 }
 
 #roadmap .title-group h2{
@@ -674,6 +676,7 @@ p{
 #roadmap article p{
 	line-height:1.5;
 	font-size:17px;
+	color: white;
 }
 
 #roadmap .nth-article:first-child article{
@@ -852,18 +855,21 @@ p{
 	display:block;
 	font-size:26px;
 	font-family:var(--font_b);
+	margin-bottom: 20px;
 }
 
 #tokenomic .item-box b{
 	color:var(--green);
-	font-size:50px;
-	display:block;
+	font-size:40px;
 }
 
-.item-box p{
-	font-size:24px;
+.item-box p,.item-box ul li{
+	font-size: 18px;
 }
 
+.item-box ul li{
+	list-style: disc;
+}
 
 
 
@@ -952,4 +958,14 @@ footer{
     width: 24px;
     height: 20px;
     transform: rotate(-90deg);
+}
+
+a.btn-joinus{
+	color: var(--green);
+	font-size: 24px !important;
+	font-weight: bold;
+}
+
+a.btn-joinus i{
+	margin-left: 5px;
 }

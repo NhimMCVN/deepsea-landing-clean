@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 /* **************** Countdown **************** */
-const targetDate = new Date("2025-08-01T23:59:59").getTime();
+const targetDate = new Date("2025-11-01T23:59:59").getTime();
 const countdownElement = document.getElementById("countdown");
 const updateCountdown = () => {
     const now = new Date().getTime();
